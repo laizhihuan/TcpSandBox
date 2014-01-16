@@ -12,14 +12,14 @@
 
 ### 部署和测试
 
-* 使用·mvn package·打包TcpSandBox-0.0.1-SNASHOT.jar
+* 使用`mvn package`打包TcpSandBox-0.0.1-SNASHOT.jar
 * 将configure.properties,server.sh,TcpSandBox-0.0.1-SNASHOT.jar上传到游戏服务器同一文件目录下。eg:../sandBoxServer/
-* 使用server.sh start   启动服务；
-* 使用server.sh stop    停止服务；
-* 使用server.sh restart 重启服务；
+* 使用`server.sh start`   启动服务；
+* 使用`server.sh stop`    停止服务；
+* 使用`server.sh restart` 重启服务；
 * 常看sandbox_server.log看服务是否正常启动；
-* 使用·telnet IP 843· 测试
-* 一般会返回：
+* 使用`telnet sandBoxServerIP 843` 测试
+* eg：
     
  ```     
  telnet 127.0.0.1 843
@@ -36,11 +36,11 @@
  
 ### 常见问题
 
-1. 执行server.sh时，找不到JDK运行环境
+1. 执行server.sh时，找不到JDK运行环境  
 你需要修改server.sh JDK=your javahome path
 
-2. 执行server.sh时，没有权限
-你需要
+2. 执行server.sh时，没有权限   
+可以尝试：
 * `chmod +x server.sh`
 * `sudo ./server.sh`
 
