@@ -37,12 +37,12 @@
 ### 常见问题
 
 1. 执行server.sh时，找不到JDK运行环境  
-你需要修改server.sh JDK=your javahome path
+你需要去server.sh 修改JDK=your javahome path
 
 2. 执行server.sh时，没有权限   
 可以尝试：
-* `chmod +x server.sh`
-* `sudo ./server.sh`
+`chmod +x server.sh` 
+`sudo ./server.sh`
 
 
 
