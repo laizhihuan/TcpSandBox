@@ -41,8 +41,11 @@
 
 2. 执行server.sh时，没有权限   
 可以尝试：
-`chmod +x server.sh` 
-`sudo ./server.sh`
+
+    ```
+    chmod +x server.sh
+    sudo ./server.sh
+    ```
 
 
 
