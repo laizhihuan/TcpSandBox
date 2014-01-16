@@ -11,7 +11,7 @@ import java.util.ResourceBundle;
 import java.util.Set;
 
 public class SandBoxServer {
-	private ByteBuffer sendBuffer;
+	private String sendText;
 	private Selector selector;
 	
 	public SandBoxServer(int port,String sendText) throws IOException {
@@ -26,7 +26,7 @@ public class SandBoxServer {
 			
 		ss.register(selector, SelectionKey.OP_ACCEPT);
 		
-		this.sendBuffer = ByteBuffer.wrap(sendText.getBytes());
+		this.sendText = sendText;
 		
 		System.out.println("SandBoxServer start at " + port);
 	}
@@ -47,13 +47,14 @@ public class SandBoxServer {
 	private void handleKey(SelectionKey key) throws IOException {
 		ServerSocketChannel server = null;
 		SocketChannel client = null;
+		ByteBuffer sendBuffer = ByteBuffer.wrap(this.sendText.getBytes());
 		if(key.isAcceptable()) {
 			server = (ServerSocketChannel)key.channel();
 			client = server.accept();
 			client.configureBlocking(false);
 			//写入sandbox内容
 			client.write(sendBuffer);
-			client.register(selector, SelectionKey.OP_READ);
+			//client.register(selector, SelectionKey.OP_READ);
 			client.close();
 		} 
 	}
