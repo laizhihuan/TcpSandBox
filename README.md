@@ -1,6 +1,6 @@
 ### Unity WebPlayer Security SandBox server
 
-有关unity webplayer security sandbox server 转载于[Unity3d Web Player 的server端联网配置](http://www.cnblogs.com/funyuto/p/3216256.html).
+有关unity webplayer security sandbox server 请看[Unity3d Web Player 的server端联网配置](http://www.cnblogs.com/funyuto/p/3216256.html).
 
 有关unity webplayer security sandbox server，更详细的描述[SecuritySandbox](http://game.ceeger.com/Manual/SecuritySandbox.html)
 
