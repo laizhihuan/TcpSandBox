@@ -19,3 +19,4 @@ example.log
 *.log
 *.class
 logs/
+deploy.sh
