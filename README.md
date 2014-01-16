@@ -17,7 +17,7 @@
 * 使用`server.sh start`   启动服务；
 * 使用`server.sh stop`    停止服务；
 * 使用`server.sh restart` 重启服务；
-* 常看sandbox_server.log看服务是否正常启动；
+* 查看sandbox_server.log判断是否正常启动；
 * 使用`telnet sandBoxServerIP 843` 测试
 * eg：
     
