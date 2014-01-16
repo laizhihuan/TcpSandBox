@@ -1,0 +1,21 @@
+# code noise
+classes
+lib/
+target
+conf
+.classpath
+.settings
+.bin
+bin
+.merge_file_*
+.project
+example.log.*
+example.log
+# old skool
+.svn
+# osx noise
+.DS_Store
+*.jar
+*.log
+*.class
+logs/
