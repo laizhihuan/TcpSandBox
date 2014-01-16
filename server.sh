@@ -18,7 +18,7 @@ REALPATH=$(dirname $SCRIPT)
 
 cd $REALPATH
 
-CLASSPATH=./TcpSandBox-0.0.1-SNAPSHOT.jar
+CLASSPATH=./:./TcpSandBox-0.0.1-SNAPSHOT.jar
 
 export LANG=zh_CN.gbk
 PIDFILE=${REALPATH}/${APPNAME}.pid
