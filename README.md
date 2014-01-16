@@ -44,7 +44,7 @@
 
     ```
     chmod +x server.sh
-    sudo ./server.sh
+    sudo ./server.sh start
     ```
 
 
